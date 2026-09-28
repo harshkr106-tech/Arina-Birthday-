@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Arina — Happy Birthday ❤️</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family: Georgia, "Times New Roman", serif;
+    color:#4a2330;
+    background:
+      radial-gradient(circle at 15% 15%, rgba(255,255,255,.8) 0 2px, transparent 3px),
+      radial-gradient(circle at 80% 30%, rgba(255,255,255,.7) 0 1.5px, transparent 2.5px),
+      linear-gradient(135deg,#fff4f6,#ffe4eb 48%,#fff7f0);
+    background-size:180px 180px,230px 230px,100% 100%;
+    overflow-x:hidden;
+  }
+  .hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+  .heart{
+    position:absolute;bottom:-30px;font-size:18px;opacity:.45;
+    animation:float 9s linear infinite;
+  }
+  @keyframes float{
+    0%{transform:translateY(0) rotate(0);opacity:0}
+    15%{opacity:.5} 100%{transform:translateY(-110vh) rotate(25deg);opacity:0}
+  }
+  .wrap{position:relative;z-index:1}
+  section{min-height:100vh;padding:70px 20px;display:flex;align-items:center;justify-content:center}
+  .hero{text-align:center;position:relative}
+  .eyebrow{letter-spacing:4px;text-transform:uppercase;font:700 12px Arial,sans-serif;color:#b45b73;margin-bottom:22px}
+  h1{font-size:clamp(52px,14vw,105px);line-height:.9;color:#8f304d;text-shadow:0 8px 25px rgba(143,48,77,.12)}
+  .subtitle{font:500 17px Arial,sans-serif;line-height:1.7;max-width:600px;margin:25px auto;color:#704452}
+  .btn{
+    border:0;background:#8f304d;color:#fff;padding:15px 27px;border-radius:999px;
+    font:bold 14px Arial,sans-serif;cursor:pointer;box-shadow:0 10px 25px rgba(143,48,77,.2);
+    transition:.25s
+  }
+  .btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(143,48,77,.28)}
+  .scroll{margin-top:45px;font:12px Arial,sans-serif;letter-spacing:2px;color:#a56b79}
+  .card{
+    width:min(900px,100%);background:rgba(255,255,255,.7);backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.85);border-radius:30px;padding:42px 28px;
+    box-shadow:0 20px 60px rgba(117,43,64,.1);text-align:center
+  }
+  .section-label{font:700 11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#bd6179;margin-bottom:14px}
+  h2{font-size:clamp(34px,8vw,58px);color:#8f304d;margin-bottom:20px}
+  .message{font-size:19px;line-height:1.9;max-width:720px;margin:auto}
+  .signature{margin-top:28px;font-size:24px;font-style:italic;color:#8f304d}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+  .reason{
+    padding:26px 18px;border-radius:22px;background:#fff7f8;border:1px solid #f7d7df;
+    min-height:170px;display:flex;flex-direction:column;justify-content:center;transition:.25s
+  }
+  .reason:hover{transform:translateY(-5px)}
+  .emoji{font-size:32px;margin-bottom:12px}
+  .reason h3{font-size:20px;margin-bottom:8px;color:#8f304d}
+  .reason p{font:14px/1.6 Arial,sans-serif;color:#795562}
+  .timeline{max-width:700px;margin:25px auto 0;text-align:left}
+  .event{display:flex;gap:18px;margin:22px 0;align-items:flex-start}
+  .dot{min-width:18px;height:18px;border-radius:50%;background:#b84d6a;margin-top:5px;box-shadow:0 0 0 6px #f9dfe5}
+  .event strong{font-size:19px;color:#8f304d}
+  .event p{font:14px/1.65 Arial,sans-serif;color:#795562;margin-top:5px}
+  .secret{
+    margin:30px auto 0;max-width:620px;background:#fff;border-radius:25px;padding:25px;
+    cursor:pointer;border:2px dashed #e5a9b8;transition:.3s
+  }
+  .secret:hover{transform:scale(1.01)}
+  .secret .inside{display:none;font-size:18px;line-height:1.8}
+  .secret.open .inside{display:block}
+  .secret.open .cover{display:none}
+  .cover{font:bold 15px Arial,sans-serif;color:#9d405c}
+  .final h2{font-size:clamp(42px,10vw,75px)}
+  .final-message{font-size:20px;line-height:1.9;max-width:680px;margin:auto}
+  .tiny{font:12px Arial,sans-serif;color:#a46b78;margin-top:35px}
+  @media(max-width:700px){
+    section{padding:55px 16px}
+    .grid{grid-template-columns:1fr}
+    .card{padding:34px 20px;border-radius:24px}
+    .message,.final-message{font-size:17px}
+  }
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<div class="wrap">
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">A little birthday surprise</div>
+    <h1>Happy Birthday,<br>Arina ❤️</h1>
+    <p class="subtitle">
+      Wifey, I made you a tiny corner of the internet because one birthday message
+      didn't feel like enough.
+    </p>
+    <button class="btn" onclick="document.getElementById('letter').scrollIntoView()">Open your letter 💌</button>
+    <div class="scroll">↓ keep scrolling ↓</div>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="card">
+    <div class="section-label">From Harsh</div>
+    <h2>For my wifey</h2>
+    <p class="message">
+      Arina, happy birthday to the girl who somehow became such an important part
+      of my life in such a short time. We've known each other for seven months,
+      and even though we've only officially been together for one month,
+      you've already given me so many reasons to smile.
+      <br><br>
+      I don't know what the future is going to look like, and I don't want to
+      make some perfect movie-like promise. I just know that right now,
+      I'm genuinely happy that it's <em>you</em>.
+      <br><br>
+      I hope this year brings you the kind of happiness you deserve —
+      the quiet kind, the silly kind, the unexpected kind, and the kind
+      that makes you smile for no reason.
+      And whenever life gets a little heavy, I hope you remember that
+      there's a certain idiot named Harsh who's always going to be rooting for you.
+    </p>
+    <div class="signature">— Harsh ❤️</div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <div class="section-label">Just a few things</div>
+    <h2>Why you're special to me</h2>
+    <div class="grid">
+      <div class="reason"><div class="emoji">🌷</div><h3>Your presence</h3><p>Somehow, talking to you can make an ordinary day feel a little less ordinary.</p></div>
+      <div class="reason"><div class="emoji">🫶</div><h3>The little things</h3><p>It's the tiny conversations, random moments and stupid jokes that I end up remembering.</p></div>
+      <div class="reason"><div class="emoji">✨</div><h3>You being you</h3><p>You don't have to be perfect for me. You just have to be Arina. That's already enough.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <div class="section-label">Our little timeline</div>
+    <h2>7 months → 1 month ❤️</h2>
+    <div class="timeline">
+      <div class="event"><div class="dot"></div><div><strong>Seven months ago</strong><p>Two people started getting to know each other, without knowing where the story would go.</p></div></div>
+      <div class="event"><div class="dot"></div><div><strong>Somewhere along the way</strong><p>Conversations became memories, and you became someone I didn't want to lose.</p></div></div>
+      <div class="event"><div class="dot"></div><div><strong>One month ago</strong><p>We finally became “us”. And honestly? I'm really glad we did.</p></div></div>
+      <div class="event"><div class="dot"></div><div><strong>Today</strong><p>It's your birthday. So this little website exists because apparently a normal “Happy Birthday” wasn't enough. 😭</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <div class="section-label">One more thing</div>
+    <h2>Open this when you miss me 🥺</h2>
+    <div class="secret" onclick="this.classList.toggle('open')">
+      <div class="cover">🔒 Tap to open your secret message</div>
+      <div class="inside">
+        If you're reading this because you miss me,
+        come here, wifey. 🫂<br><br>
+        Imagine me giving you the biggest hug possible,
+        annoying you for a few minutes, and then telling you
+        that I love having you in my life.
+        <br><br>
+        Now smile. That's an order. ❤️
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="card">
+    <div class="section-label">The last page</div>
+    <h2>Happy Birthday, Wifey ❤️</h2>
+    <p class="final-message">
+      I hope you have an amazing birthday, Arina.
+      Keep smiling, keep being the person you are,
+      and keep making your little corner of the world brighter.
+      <br><br>
+      Seven months of knowing you.<br>
+      One month of calling you mine.<br>
+      And hopefully, a lot more memories ahead.
+      <br><br>
+      <strong>Happy Birthday, wifey. ❤️</strong>
+    </p>
+    <p class="tiny">Made with love (and probably way too much overthinking) by Harsh.</p>
+  </div>
+</section>
+</div>
+
+<script>
+  const box=document.getElementById('hearts');
+  const symbols=['♥','♡','✦','❤'];
+  for(let i=0;i<28;i++){
+    const h=document.createElement('span');
+    h.className='heart';
+    h.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    h.style.left=Math.random()*100+'%';
+    h.style.animationDelay=(Math.random()*8)+'s';
+    h.style.animationDuration=(7+Math.random()*7)+'s';
+    h.style.fontSize=(12+Math.random()*18)+'px';
+    box.appendChild(h);
+  }
+</script>
+</body>
+</html>
